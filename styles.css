@@ -79,13 +79,13 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid whitesmoke;
-  transition: all .5s;
+  border: 5px solid whitesmoke;
+  transition: all 1.5s;
   margin-bottom: 10px;
 }
 
 header .profile-image:hover {
-  transform: scale(1.2) rotate(360deg);
+  transform: scale(2.5) rotate(360deg);
 }
 
 header .location {
@@ -99,7 +99,6 @@ header .location {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-  letter-spacing: 2;
 }
 
 .location {
@@ -120,6 +119,16 @@ header .location {
 
 .card:hover {
   border-color: #3B4F5C;
+}
+
+.card h2 {
+  text-align: center;
+}
+
+.card img {
+  max-width: 75%;
+  display: block;
+  margin: 0 auto;
 }
 
 ul.skills {
@@ -185,17 +194,49 @@ a.social:hover {
 }
 
 
+/* Additional Styles by Nils */
+
+.experience li {
+  padding-bottom: 10px;
+}
+
+.contact {
+  display: block;
+  text-align: center;
+}
+
+.card .img-100 {
+  max-width: 100%;
+}
+
+a.main-links {
+  color: #80A3C2;
+}
+
+a.main-links:hover {
+  color: #4C6275;
+}
+
+.beauty {
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+  color: #4C6275;
+  margin-top: 2em;
+}
+
+
 /* Styles for larger screens */
 
 @media screen and (min-width: 720px) {
   
   .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex; 
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
   }
 
   header {
